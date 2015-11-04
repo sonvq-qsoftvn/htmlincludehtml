@@ -1,0 +1,23 @@
+<html> 
+    <head> 
+        <style>
+            b {
+                color: red;
+            }
+        </style>
+    </head> 
+
+    <body> 
+        <div id="menu"></div>
+        <div data-include="c.html"></div>
+
+    </body> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/csi.min.js"></script>
+    <script>
+        $(function () {
+            $("#menu").load("b.html");
+        });
+    </script> 
+</html>
